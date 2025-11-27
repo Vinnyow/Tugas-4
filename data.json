@@ -1,10 +1,7 @@
-import os
+{
+  "pressure": 1000,
+  "temperature": 25,
+  "humidity": 60,
+  "timestamp": "00:00:00"
+}
 
-os.chdir(f"/content/{REPO_NAME}")
-
-!git config user.email "colab@auto.push"
-!git config user.name "Google Colab Bot"
-
-!git add .
-!git commit -m "Auto-update dashboard tekanan"
-!git push https://{GITHUB_USERNAME}:{GITHUB_TOKEN}@github.com/{GITHUB_USERNAME}/{REPO_NAME}.git
